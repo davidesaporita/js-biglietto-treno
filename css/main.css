@@ -1,0 +1,37 @@
+/* General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.u-textCenter {
+    text-align: center;
+}
+
+#mega-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#header,
+#footer {
+    background-color: purple;
+    padding: 30px;
+}
+
+#main {
+    flex-grow: 1;
+    background-color: lightcoral;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
