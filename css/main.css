@@ -7,7 +7,11 @@
   
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    color: #999;
+}
+
+h1 {
+    color: crimson;
 }
 
 .u-textCenter {
@@ -22,16 +26,35 @@ body {
 
 #header,
 #footer {
-    background-color: purple;
+    background-color: #fff;
     padding: 30px;
 }
 
 #main {
     flex-grow: 1;
-    background-color: lightcoral;
+    background-color: #eee;
+    color: #000;
+}
+
+#main .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     width: 600px;
+    height: 100%;
     margin: 0 auto;
+}
+
+.ticketCard {
+    width: 600px;
+    height: 250px;
+    padding: 90px 20px;
+    background-image: url('../img/double-bubble-outline.png');
+    border-radius: 20px;
+    filter: drop-shadow(0 0 1rem #777);
+    transition: filter 1s;
+    text-align: center;
 }
