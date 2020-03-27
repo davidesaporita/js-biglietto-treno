@@ -17,15 +17,15 @@ var sconto = 0;
 
 // 2) Calcolo del prezzo del biglietto standard (0,21€/km)
 
-var prezzoStandard = (kmPercorrenza * 0.21).toPrecision(3);
+var prezzoStandard = (kmPercorrenza * 0.21).toFixed(2);
 
 // 3) Verifica delle condizioni per l'applicazione dello sconto (-20% per <18 e -40% per >= 65) e calcolo degli importi scontati
 
 if ( etaPasseggero < 18) {
-    prezzoFinale = (prezzoStandard * 0.80).toPrecision(3);
+    prezzoFinale = (prezzoStandard * 0.80).toFixed(2);
     sconto = 20;
 } else if ( etaPasseggero >= 65 ) {
-    prezzoFinale = (prezzoStandard * 0.60).toPrecision(3);
+    prezzoFinale = (prezzoStandard * 0.60).toFixed(2);
     sconto = 40;    
 } else {
     prezzoFinale = prezzoStandard;
